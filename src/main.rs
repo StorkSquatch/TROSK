@@ -8,7 +8,8 @@ fn panic(_info: &PanicInfo) -> ! {
     loop {}
 }
 
-#[no_mangle]
+/// On Start
+#[no_mangle] 
 pub extern "C" fn _start() -> ! {
     vga_buffer::print_s();
     loop {}
