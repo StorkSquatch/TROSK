@@ -1,4 +1,5 @@
 #in .cargo folder
+
 [target.'cfg(target_os = "linux")']
 rustflags = ["-C", "link-arg=-nostartfiles"]
 
